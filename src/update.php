@@ -18,7 +18,7 @@ include "config.php";
 <body>
     <div class="main">
         <div class="container">
-            <h4 class="title">Thêm dữ liệu </h4>
+            <h4 class="title">Sửa dữ liệu </h4>
 
             <form action="" method="POST">
                 <div class="row">
@@ -44,7 +44,7 @@ include "config.php";
                         <label for="patient_birth">Ngày Sinh</label>
                     </div>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="patient_birth" name="patient_birth">
+                        <input type="date" class="form-control" id="patient_birth" name="patient_birth">
                     </div>
                 </div>
                 <div class="row">
@@ -90,6 +90,13 @@ include "config.php";
                         <input type="number" class="form-control" id="patient_weight" name="patient_weight">
                     </div>
                 </div>
+
+
+
+
+
+
+
                 <div class="row">
                     <div class="col-md-2">
                         <label for="">Nhóm Máu</label>
@@ -160,11 +167,11 @@ $sql = "INSERT INTO patient (firstname, lastname, dateofbirth, gender, mobile, e
 
     if($_result>0){
         $_SESSION['add'] = "<div class='text-success'>Thêm Thành Công</div>";
-        header("Location:details.php");
+        header("Location: src/details.php");
     }
     else{
         $_SESSION['add'] = "<div class='text-danger'>Thêm Thất Bại</div>";
-        header("Location:error.php");
+        header("Location:employees.php");
     }
 }
     mysqli_close($conn);

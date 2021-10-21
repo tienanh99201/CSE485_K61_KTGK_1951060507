@@ -89,7 +89,7 @@
 
 
 
-                        <td><a href="editUser.php?id=<?php echo $row['patientid']; ?>"><button
+                        <td><a href="update.php?id=<?php echo $row['patientid']; ?>"><button
                                     class="btn btn-secondary">Sửa</button></a></td>
                         <td><a href="deleteCustomer.php?id=<?php echo $row['patientid']; ?>"><button class="btn btn-danger">Xóa
                                     </button</a>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,19 +19,7 @@
     <div class="main">
         <div class="container">
 
-            <?php
-
-                     if(isset($_SESSION['add']))
-                    {
-                        echo $_SESSION['add'];
-                        unset($_SESSION['add']);
-                    }
-                    if(isset($_SESSION['delete']))
-                    {
-                        echo $_SESSION['delete'];
-                        unset($_SESSION['delete']);
-                    }
-         ?>
+            
             <table class="table">
                 <thead>
                     <tr>
